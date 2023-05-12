@@ -64,3 +64,20 @@ def calculator():
 
 calculator()
 
+# Ask the user for another calculation
+while True:
+    try:
+        retry = input("\nDo you want to perform another calculation? (yes/no): ")
+        # if yes, go back to start
+        if retry.lower() == "yes":
+            print("")
+            calculator()
+        # if no, exit program
+        elif retry.lower() == "no":
+            print("\033[;33m" + "Thank you for your hardwork." + "\033[;3m")
+            print("")
+            break
+        else:
+            raise ValueError("Invalid Input")
+    except ValueError:
+        print("Invalid Input. Please enter 'yes' or 'no'.")
