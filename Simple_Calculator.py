@@ -24,3 +24,7 @@ def calculator():
         '"/" for division\n'
         'Select an operation: '
     )
+
+    # Ask to enter first and second number
+    firstnumber = float(input("\033[;33m" "Enter the 1st number : "))
+    secondnumber = float(input("\033[;33m" "Enter the 2nd number : "))
